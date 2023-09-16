@@ -1,0 +1,308 @@
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; /* 1rem = 10px*/
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+	font-size: 1.6rem;
+    font-family: sans-serif;
+	line-height: 2;
+    margin: 0;
+
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo nav {
+    padding-right: 20px;
+
+}
+
+.tl {
+    margin-left: 50px;
+    color: white;
+    text-transform: capitalize;
+    text-underline-offset: 23px;
+}
+
+header {
+    background-color: darkcyan;
+    padding: 5px;
+    height: 180px;
+}
+
+a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.sn{
+    background-image: url("images/cang.jpeg");
+    width: 100%;   
+    height: 400px;
+    background-size: cover;
+
+}
+li {
+    display: inline-block;
+}
+
+a:hover {
+    color: red;
+}
+
+.slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    margin: 0;
+    animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    height: 500px;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+
+.travel-items {
+    padding: 12px;
+    margin-left: 5px;
+    width: 305px;
+    height: 850px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+}
+
+.travel-items img {
+    width: 100%;
+    height: 280px;
+    border-radius: 15px 15px 0 0;
+    padding: 2px;
+}
+
+.mision h2{
+    color: rgb(0, 153, 255);
+}
+
+.vision h2{
+    color: rgb(0, 153, 255);
+
+}
+h1 {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.detalles {
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+}
+
+.detalles {
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+}
+
+.detalles-sub {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.detalles-sub>h5 {
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.price {
+    color: red;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.detalles>p {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    align-self: stretch;
+}
+
+.detalles>button {
+    background: yellow;
+    border: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 180px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+footer {
+    background-color: gray;
+}
+
+footer p {
+    text-transform: capitalize;
+    margin-left: 600px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer label {
+    margin-bottom: 10px;
+}
+
+.all {
+    display: flex;
+    padding: 30px;
+    column-gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.parc {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:400px) {
+    header nav {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    footer.contacto {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+}
+
+
+.contenedor-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.formulario {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.formulario h1 {
+    text-transform: uppercase;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.campo label,
+.campo input:not([type="submit"]),
+.campo textarea {
+    flex: 1;
+
+}
+
+.campo textarea {
+    height: 200px;
+}
+
+.btn {
+    margin: 10px;
+    transition: background-color .3s;
+    background-color: #35A29F;
+    border: 0;
+    border-radius: 10px;
+    width: 90px;
+    height: 50px;
+    display: block;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #088395;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-center {
+    text-align: center;
+}
